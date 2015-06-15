@@ -20,7 +20,7 @@ void main(string[] args) {
     scope(exit) if (tempFile.exists()) tempFile.remove();
 
     string[] src;
-    uint offset;
+    ulong offset;
 
     with (["dmd", "--version"].execute()) {
         if (status) {
